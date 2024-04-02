@@ -1,21 +1,28 @@
-<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-  <div class="container-fluid">
-    <!-- Options des autres pages à gauche -->
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/add">Add Car</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/list">Join Us</a>
-      </li>
-    </ul>
-    <!-- Formulaire de recherche à droite -->
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+<!-- <nav class="fixed top-0 left-0 w-full bg-gray-800 z-50">
+  <div class="flex justify-between items-center h-12 px-4">
+    <div class="rounded-md">
+      <ul class="horizontal-menu flex">
+        <li (click)="onMenuClick('home')" class="mr-4"><a routerLink="/home" class="text-white text-2xl cursor-pointer hover:underline">Home</a></li>
+        <li (click)="onMenuClick('add')" class="mr-4"><a routerLink="/add" class="text-white text-2xl cursor-pointer hover:underline">Add Car</a></li>
+        <li (click)="onMenuClick('depot')" class="mr-4"><a routerLink="/depot" class="text-white text-2xl cursor-pointer hover:underline">Depot</a></li>
+        <li (click)="onMenuClick('joinUs')"><a routerLink="/joinUs" class="text-white text-2xl cursor-pointer hover:underline">Join Us</a></li>
+      </ul>
+    </div>
+    <div class="mr-6">
+      <i class="fa fa-user text-white text-2xl"></i>
+    </div>
   </div>
+</nav> -->
+
+<nav class="fixed top-0 left-0 w-full flex h-12 justify-between items-center bg-gray-800 z-50">
+  <div class="ml-4">
+    <a href="#"><img src="../../assets/img/oui.PNG" alt="Description de l'image" height="60" width="150"></a>
+  </div>
+  <ul class="flex">
+    <li class="mr-6 text-white cursor-pointer hover:underline" (click)="onMenuClick('home')"><a routerLink="/home">Home</a></li>
+    <li class="mr-6 text-white cursor-pointer hover:underline" (click)="onMenuClick('add')"><a routerLink="/add">Add Car</a></li>
+    <li class="mr-6 text-white cursor-pointer hover:underline" (click)="onMenuClick('depot')"><a routerLink="/depot">Dépôts</a></li>
+    <li class="mr-6 text-white cursor-pointer hover:underline" (click)="onMenuClick('joinUs')"><a routerLink="/joinUs">Contact</a></li>
+  </ul>
+  <div class="mr-4"></div>
 </nav>

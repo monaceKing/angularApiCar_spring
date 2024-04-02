@@ -1,0 +1,23 @@
+<!-- side-nav.component.html -->
+<nav>
+  <ul *ngIf="selectedMenu === 'home'">
+    <!-- Options spécifiques au menu "Home" -->
+    <li>Option home1</li>
+    <li>Option home2</li>
+  </ul>
+  <ul *ngIf="selectedMenu === 'add'">
+    <!-- Options spécifiques au menu "Produits" -->
+    <li>Option addCarA</li>
+    <li>Option addCarB</li>
+  </ul>
+  <ul *ngIf="selectedMenu === 'depot'">
+    <!-- Options spécifiques au menu "Dépôt" -->
+    <li>Option depotX</li>
+    <li>Option depotY</li>
+  </ul>
+  <ul *ngIf="selectedMenu === 'joinUs'">
+    <!-- Options spécifiques au menu "Contact" -->
+    <li><a routerLink="/add">Add Car</a></li>
+    <li>Option joinUsW</li>
+  </ul>
+</nav>

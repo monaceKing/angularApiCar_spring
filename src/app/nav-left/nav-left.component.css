@@ -1,0 +1,14 @@
+.custom-width {
+  height: 90vh; /* 90% de la hauteur de la fenêtre */
+  width: 150px; /* Largeur fixe du menu */
+}
+
+li{
+  list-style-type: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+nav{
+  padding-top: 2em;
+}

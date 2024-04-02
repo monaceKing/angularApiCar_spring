@@ -1,0 +1,31 @@
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
+  height: 50px; /* Hauteur de la barre de navigation en haut */
+  /* background-color: #1ace38; */
+  z-index: 1000; /* Assurez-vous que la barre de navigation en haut est au-dessus du reste du contenu */
+}
+
+.left-nav {
+  position: fixed;
+  margin-top: 0px; /* Débute après la barre de navigation en haut, avec un espacement de 2px */
+  width: 15%;
+  height: 100%;
+  background-color: #1a1355d3;
+  z-index: 999; /* Assurez-vous que la barre de navigation à gauche est au-dessus du reste du contenu sauf la barre de navigation en haut */
+}
+
+main {
+  margin-top: 50px; /* Marge supérieure pour tenir compte de la barre de navigation en haut et de l'espacement */
+ /* Ajustez la marge gauche pour tenir compte de la barre de navigation à gauche */
+  height: calc(100vh - 52px); /* Hauteur restante en soustrayant la hauteur de la barre de navigation en haut et de l'espacement */
+  overflow-y: auto; /* Ajoutez un défilement vertical si nécessaire */
+  background-color: #1f293a;
+  width: 85%;
+  margin-left: 15%;
+
+}
+
+/* Autres styles de votre choix */
